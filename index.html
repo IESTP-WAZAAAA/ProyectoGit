@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Sencilla</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primario: #004080;
+            --secundario: #0080ff;
+            --texto: #212529;
+            --fondo: #f8f9fa;
+        }
+
+        body {
+            background-color: var(--fondo);
+            color: var(--texto);
+        }
+
+        .navbar {
+            background-color: var(--primario);
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: var(--secundario) !important;
+        }
+
+        .hero {
+            background-color: var(--primario);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .features {
+            background-color: var(--secundario);
+            color: #fff;
+            padding: 50px 20px;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: var(--primario);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Página</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Bienvenido a Mi Página</h1>
+            <p>Tu solución para servicios modernos y atractivos.</p>
+            <a href="#servicios" class="btn btn-light btn-lg">Explorar Más</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="servicios" class="features">
+        <div class="container text-center">
+            <h2>Nuestros Servicios</h2>
+            <p class="mb-5">Ofrecemos soluciones personalizadas para ti.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 1</h5>
+                            <p class="card-text">Descripción breve del servicio 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 2</h5>
+                            <p class="card-text">Descripción breve del servicio 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Servicio 3</h5>
+                            <p class="card-text">Descripción breve del servicio 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <p>&copy; 2024 Mi Página. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
